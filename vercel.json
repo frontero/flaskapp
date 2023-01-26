@@ -8,9 +8,5 @@
     ],
     "env": {
         "FLASK_APP": "app.py"
-    },
-    "dependencies": {
-        "flask": "*",
-        "gdown": "*"
     }
 }
