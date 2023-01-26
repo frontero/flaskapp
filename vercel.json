@@ -1,15 +1,16 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "./app.py",
-      "use": "@vercel/python"
+    "version": 2,
+    "builds": [
+        {
+            "src": "app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "env": {
+        "FLASK_APP": "app.py"
+    },
+    "dependencies": {
+        "flask": "*",
+        "gdown": "*"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
 }
