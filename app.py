@@ -1,4 +1,4 @@
-retun "AI was triggered!"
+return "AI was triggered!"
 
 from flask import Flask, jsonify
 import gdown
