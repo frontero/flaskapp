@@ -3,7 +3,7 @@ import gdown
 
 app = Flask(__name__)
 
-@app.route('/run-colab')
+@app.route('/')
 def run_colab():    
     success = gdown.download('https://colab.research.google.com/drive/1AnkaT2HS5xfZVcIozbBqqDGSS8gEqOD0', 'colab.ipynb', quiet=False)
     if success:
